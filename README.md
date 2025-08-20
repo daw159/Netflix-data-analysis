@@ -1,96 +1,68 @@
 📺 Netflix Data Analysis
 
-This project explores the Netflix Titles Dataset (from Kaggle) using Python, Pandas, and Matplotlib.
-It focuses on understanding content distribution, trends, and patterns in Netflix's catalog of Movies and TV Shows.
+This project analyzes the Netflix Titles Dataset (from Kaggle) using Python, Pandas, and Matplotlib.
+The goal is to clean the dataset and explore trends in Netflix Movies and TV Shows.
 
 📂 Dataset
 
 Source: Netflix Titles Dataset on Kaggle
 
-Shape: ~8800 records
+Rows: ~8800
 
 Columns used:
 
 type → Movie or TV Show
 
-title → Title of content
+title → Name of the content
 
 country → Country of origin
 
 release_year → Year of release
 
-rating → Content rating (e.g., TV-MA, PG-13)
+rating → Age rating (e.g., TV-MA, PG-13)
 
-duration → Duration in minutes (for movies) or number of seasons (for shows)
+duration → Duration in minutes (movies) or number of seasons (shows)
 
-🔍 Analysis Performed
+🧹 Data Cleaning
 
-Movies vs TV Shows
+Removed unnecessary columns (like description).
 
-Count of Movies and TV Shows available.
+Handled missing values using dropna().
 
-Visualized using a bar chart.
+Removed duplicate records.
 
-Ratings Distribution
+Cleaned the duration column to convert strings (e.g., "90 min") into numbers.
 
-Distribution of different ratings like TV-MA, TV-14, PG, R.
+📊 Analysis & Visualizations
 
-Visualized using pie chart & bar chart.
+Movies vs TV Shows → Bar chart comparing counts.
 
-Release Year Trends
+Ratings Distribution → Pie chart of content ratings.
 
-Content released each year (Movies vs TV Shows).
+Duration of Movies → Histogram showing movie lengths.
 
-Line plots showing growth in Netflix’s catalog.
+Release Year vs Number of Shows → Scatter plot to visualize trends.
 
-Average Duration of Movies
+Top 10 Countries → Bar chart of countries producing most content.
 
-Converted durations to numeric (minutes).
+Year-wise Movies and Shows → Line plot comparing releases over time.
 
-Found average movie duration.
-
-TV Show Seasons Distribution
-
-Distribution of number of seasons for TV shows.
-
-Top Content-Producing Countries
-
-Top 10 countries with the most Netflix titles.
-
-Visualized using a bar chart.
-
-📊 Visualizations
-
-✅ Movies vs TV Shows distribution
-
-✅ Ratings distribution
-
-✅ Year-wise release trends
-
-✅ Average duration of movies
-
-✅ TV show seasons distribution
-
-✅ Top 10 producing countries
-
-(plots are saved in /plots folder)
-
-🛠️ Tech Stack
+🛠️ Tools Used
 
 Python
 
-Pandas (data cleaning, transformation)
+Pandas → data cleaning and grouping
 
-Matplotlib (data visualization)
+Matplotlib → charts and visualizations
 
 🚀 Key Insights
 
-Netflix has more Movies than TV Shows, but TV Shows are growing rapidly.
+Netflix has more Movies than TV Shows.
 
 The most common ratings are TV-MA and TV-14.
 
-Movies average around 100 minutes in duration.
+Most movies are between 80–120 minutes long.
 
-Most TV Shows have 1–2 seasons.
+Number of TV Shows has grown significantly after 2015.
 
-USA and India dominate content production.
+USA and India are the top content producers.
