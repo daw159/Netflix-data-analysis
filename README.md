@@ -1,32 +1,96 @@
-# Netflix-data-analysis
-Netflix Titles Data Analysis
+📺 Netflix Data Analysis
 
-This project analyzes the Netflix dataset (from Kaggle) to explore content distribution.
+This project explores the Netflix Titles Dataset (from Kaggle) using Python, Pandas, and Matplotlib.
+It focuses on understanding content distribution, trends, and patterns in Netflix's catalog of Movies and TV Shows.
 
-Tasks Performed
+📂 Dataset
 
-Movies vs TV Shows count
+Source: Netflix Titles Dataset on Kaggle
 
-Ratings distribution
+Shape: ~8800 records
 
-Release year trends
+Columns used:
 
-Average movie duration
+type → Movie or TV Show
 
-TV show seasons distribution
+title → Title of content
 
-Top 10 content-producing countries
+country → Country of origin
 
-Tech Stack
+release_year → Year of release
 
-Python (Pandas, Matplotlib, Seaborn)
+rating → Content rating (e.g., TV-MA, PG-13)
 
-Key Insights
+duration → Duration in minutes (for movies) or number of seasons (for shows)
 
-Most Netflix titles are Movies.
+🔍 Analysis Performed
 
-TV Shows grew rapidly after 2015.
+Movies vs TV Shows
 
-Top ratings are TV-MA and TV-14.
+Count of Movies and TV Shows available.
 
-USA and India produce the most content.
+Visualized using a bar chart.
+
+Ratings Distribution
+
+Distribution of different ratings like TV-MA, TV-14, PG, R.
+
+Visualized using pie chart & bar chart.
+
+Release Year Trends
+
+Content released each year (Movies vs TV Shows).
+
+Line plots showing growth in Netflix’s catalog.
+
+Average Duration of Movies
+
+Converted durations to numeric (minutes).
+
+Found average movie duration.
+
+TV Show Seasons Distribution
+
+Distribution of number of seasons for TV shows.
+
+Top Content-Producing Countries
+
+Top 10 countries with the most Netflix titles.
+
+Visualized using a bar chart.
+
+📊 Visualizations
+
+✅ Movies vs TV Shows distribution
+
+✅ Ratings distribution
+
+✅ Year-wise release trends
+
+✅ Average duration of movies
+
+✅ TV show seasons distribution
+
+✅ Top 10 producing countries
+
+(plots are saved in /plots folder)
+
+🛠️ Tech Stack
+
+Python
+
+Pandas (data cleaning, transformation)
+
+Matplotlib (data visualization)
+
+🚀 Key Insights
+
+Netflix has more Movies than TV Shows, but TV Shows are growing rapidly.
+
+The most common ratings are TV-MA and TV-14.
+
+Movies average around 100 minutes in duration.
+
+Most TV Shows have 1–2 seasons.
+
+USA and India dominate content production.
